@@ -20,6 +20,17 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+    this.socket = SocketIOClient('http://192.168.1.107:3001/');
+    fetch('http://192.168.1.107:3001/user')
+      .then(data => {
+        console.log(data)
+      })
+  }
   render() {
     return (
       <View style={styles.container}>
