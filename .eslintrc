@@ -4,7 +4,6 @@
         "react-native/react-native": true
     },
     "extends": [
-        "eslint:recommended",
         "plugin:react/recommended"
     ],
     "parser": "babel-eslint",
@@ -21,6 +20,8 @@
     ],
     "rules": {
         "react-native/no-unused-styles": 1,
+        "react/jsx-uses-react": "warn",
+        "react/jsx-uses-vars": "error",
         "react-native/split-platform-components": 2,
         "react-native/no-inline-styles": 2,
         "no-unused-vars": "warn",
